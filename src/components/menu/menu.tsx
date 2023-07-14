@@ -12,8 +12,8 @@ const Menu:FC<ITodos> = ({items})=>{
               <div className="container">
                         <div className={styles.menuWrapper}>
 
-                            <MenuItem color='blue' count={items?.length} text='Tarefas criadas' class='textBlue'/>
-                            <MenuItem color='purple' count={items?.length} text='Concluídas' couterComplete={completedItems?.length}/>
+                            <MenuItem color='blue' count={items?.length} text='All tasks' class='textBlue'/>
+                            <MenuItem color='purple' count={items?.length} text='Done' couterComplete={completedItems?.length}/>
                         </div>
                 </div>
            

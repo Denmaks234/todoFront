@@ -21,7 +21,7 @@ const Button:FC<IButoon> = (props)=>{
     return(
        <div className={props.isUpdate?styles.btnBlockEdit:styles.buttonBlock} onClick={setUpdate}>
 
-        {!props.isUpdate?<button className={styles.button}  onClick={props.onClickAdd}>Chair</button>:
+        {!props.isUpdate?<button className={styles.button}  onClick={props.onClickAdd}>Enter</button>:
         <button className={styles.btnEdit} onClick={props.onClickUpdate}>{'Edit'}</button>}
         {props.isUpdate?<AiFillEdit className={styles.imagePlus} size='16' />:<AiOutlinePlusCircle className={styles.imagePlus} size='16'/>}
 

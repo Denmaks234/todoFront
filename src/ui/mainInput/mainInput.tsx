@@ -12,7 +12,7 @@ interface IInput{
 const Input:FC<IInput> = (props)=>{
     return (
         <div className={styles.InputBlock}>
-            <input type="text" ref={props.inputRef} placeholder='Adicione uma nova tarefa' onChange={(e)=>props.setTitle(e.target.value)} className={styles.input} value={props.title} />
+            <input type="text" ref={props.inputRef} placeholder='Enter the task' onChange={(e)=>props.setTitle(e.target.value)} className={styles.input} value={props.title} />
         </div>
     )
 }
