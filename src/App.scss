@@ -1,0 +1,32 @@
+
+
+@import './variables.scss';
+
+body{
+    margin: 0;
+    padding: 0;
+    background: $gray-600;
+    height: 100vh;
+  
+}
+
+a{
+    text-decoration: none;
+    color: white;
+    font-family: 'Inter';
+    font-size: 14px;
+    font-weight: 500;
+   
+}
+.container{
+   
+    max-width: 736px;
+    width: 100%;
+    margin: 0 auto;
+   
+}
+.todo{
+    padding-left: 20px;
+    padding-right: 20px;
+    position: relative;
+}

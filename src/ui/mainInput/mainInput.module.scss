@@ -1,0 +1,33 @@
+
+@import '../../variables.scss';
+
+.input {
+    max-width: 638px;
+    width: 100%;
+    color: $gray-300;
+    font-family: 'Inter';
+    font-size: 16px;
+    border: 0px;
+    padding: 16px;
+    background-color: $gray-400;
+    outline: none;
+    @media screen and (max-width:425px) {
+        padding: 10px;
+    }
+    @media screen and (max-width:440px) {
+        font-size: 12px;
+        
+    }
+}
+.InputBlock{
+    width: 100%;
+}
+.input::placeholder{
+    color: $gray-300;
+    font-family: 'Inter';
+    font-size: 16px;
+    @media screen and (max-width:440px) {
+        font-size: 12px;
+        
+    }
+}

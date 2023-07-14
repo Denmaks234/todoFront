@@ -1,0 +1,50 @@
+@import '../../variables.scss';
+
+
+.textPurple{
+    font-family: 'Inter';
+    font-size: 14px;
+    font-weight: 700;
+    margin-right: 8px;
+    @media screen and (max-width:375px) {
+        display: none;
+    }
+}
+.textBlue{
+    font-family: 'Inter';
+    font-size: 14px;
+    font-weight: 700;
+    margin-right: 8px;
+}
+
+.menuItem{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    
+}
+.counter{
+    padding: 2px 8px 2px 8px;
+    font-weight: 700;
+    font-family: 'Inter';
+    font-size: 12px;
+    background: $gray-400;
+    color: $gray-100;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+}
+.counterRad{
+    padding: 2px 8px 2px 8px;
+    font-weight: 700;
+    font-family: 'Inter';
+    font-size: 12px;
+    background: $gray-400;
+    color: $gray-100;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 6px;
+}

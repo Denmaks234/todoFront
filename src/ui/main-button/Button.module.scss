@@ -1,0 +1,67 @@
+
+@import '../../variables.scss';
+
+.buttonBlock{
+    width: 120px;
+    height: 62px;
+    position: relative;
+    background-color: $base-blueDark;
+
+    @media screen and (max-width:555px) {
+        height: 57px;
+    }
+    @media screen and (max-width:425px) {
+        height: 45px;
+    }
+}
+.btnBlockEdit{
+    width: 120px;
+    height: 62px;
+    position: relative;
+    background-color: #0d9e0a;
+    @media screen and (max-width:555px) {
+        height: 57px;
+    }
+    @media screen and (max-width:425px) {
+        height: 45px;
+    }
+}
+.button{
+    width: 90%;
+    height: 100%;
+    font-family: 'Inter';
+    font-weight: 700;
+    font-size: 14px;
+    background-color: $base-blueDark;
+    color: $gray-100;
+    border: none;
+    @media screen and (max-width:425px) {
+        font-size: 12px;
+    }
+}
+.imagePlus{
+    position: absolute;
+    color: rgb(255, 255, 255);
+    right: 12px;
+    top: 24px;
+    @media screen and (max-width:555px) {
+        top: 20px;
+    }
+    @media screen and (max-width:425px) {
+        top: 15px;
+    }
+   
+}
+.btnEdit{
+    width: 90%;
+    height: 100%;
+    font-family: 'Inter';
+    font-weight: 700;
+    font-size: 14px;
+    background-color: #0d9e0a;
+    color: $gray-100;
+    border: none;
+    @media screen and (max-width:425px) {
+        font-size: 12px;
+    }
+}

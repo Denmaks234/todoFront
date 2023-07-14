@@ -1,0 +1,182 @@
+@import '../../variables.scss';
+
+.image{
+    background: none;
+    border: none;
+   
+}
+
+img{
+    cursor: pointer;
+}
+
+.falseComplete{
+    box-sizing: border-box;
+    font-size: 14px;
+    margin-bottom: 12px;
+    color: $gray-100;
+    width: 100%;
+    padding: 16px 32px 16px 16px;
+    display: flex;
+    align-items: flex-start;
+    position: relative;
+    overflow: hidden;
+    justify-content: center;
+   
+    background: $gray-400;
+
+    .descr{
+        font-family: 'Inter';
+        color: $gray-100;
+        width: 90%;
+        margin: 0;
+        padding: 0;
+        margin-right: 20px;
+        margin-left: 12px;
+
+        @media screen and (max-width:375px) {
+            font-size: 12px;
+        }
+    }
+}
+.trueComplete{
+    box-sizing: border-box;
+    font-size: 14px;
+    color: $gray-100;
+    width: 100%;
+    padding: 16px 32px 16px 16px;
+    position: relative;
+    display: flex;
+    overflow: hidden;
+    margin-bottom: 12px;
+    align-items: flex-start;
+    justify-content: center;
+   
+    background: $gray-500;
+    .descr{
+        font-family: 'Inter';
+        color: $gray-300;
+        margin: 0;    
+        width: 90%;
+        padding: 0;
+        text-decoration: line-through;
+        margin-right: 24px;
+        margin-left: 12px;
+    }
+}
+
+.deleteIcon{
+    color: rgb(109, 109, 109);
+   cursor: pointer;
+
+}
+
+
+.smenu{
+    position: absolute;
+    right: 0px;
+    top: 0;
+    transition: all ease 1s;
+    height: 100%;
+    button{
+        width: 200px;
+        height: 100%;
+        margin: 0;
+        padding: 0;
+        cursor: pointer;
+        border: none;
+        @media screen and (max-width:555px) {
+            width: 140px;
+        }
+        @media screen and (max-width:470px) {
+            width: 100px;
+           svg{
+           width: 18px;
+           }
+        }
+    }
+    .closeBtn{
+        background: none;
+        position: absolute;
+        width: 20px;
+        right: 10px;
+        top: 9px;
+        height: 20px;
+        svg{
+            color: rgb(255, 255, 255);
+           
+        }
+    }
+    .deleteBtn{
+        background: rgb(83, 4, 167);
+        svg{
+            color: rgb(255, 255, 255);
+           
+        }
+
+       
+       
+
+    }
+
+    .updateBtn{
+        background-color: rgb(3, 97, 212);
+        svg{
+            color: rgb(255, 255, 255);
+           
+        }
+        
+    }
+}
+.menu{
+    position: absolute;
+    right: -400px;
+    top: 0;
+    transition: all ease 1s;
+    height: 100%;
+    button{
+        width: 200px;
+        height: 100%;
+        margin: 0;
+        padding: 0;
+        cursor: pointer;
+        border: none;
+        @media screen and (max-width:555px) {
+            width: 140px;
+        }
+        @media screen and (max-width:470px) {
+            width: 100px;
+           svg{
+            width: 18px;
+           }
+        }
+        
+    }
+    .closeBtn{
+        background: none;
+        position: absolute;
+        width: 20px;
+        right: 10px;
+        top: 9px;
+        height: 20px;
+        svg{
+            color: rgb(255, 255, 255);
+           
+        }
+    }
+    .deleteBtn{
+        background: rgb(83, 4, 167);
+        svg{
+            color: rgb(255, 255, 255);
+           
+        }
+    }
+
+    .updateBtn{
+        background-color: rgb(3, 97, 212);
+        svg{
+            color: rgb(255, 255, 255);
+           
+        }
+    }
+}

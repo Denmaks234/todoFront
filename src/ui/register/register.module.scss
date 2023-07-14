@@ -1,0 +1,108 @@
+
+.loginBlock{
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    
+}
+input{
+        width: 300px;
+        height: 30px;
+        outline: none;
+        margin-bottom: 10px;
+        padding-left: 10px;
+        @media screen and (max-width:555px) {
+            width: 240px;
+            height: 25px;
+        }
+        @media screen and (max-width:360px) {
+            width: 215px;
+            height: 25px;
+        }
+    }
+.loginBlockWrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 400px;
+    box-sizing: border-box;
+    padding: 20px;
+    background: rgb(73, 73, 73);
+    @media screen and (max-width:555px) {
+        width: 300px;
+    }
+
+    @media screen and (max-width:360px) {
+        width: 270px;
+        padding: 10px;
+    }
+}
+
+.InputUsername{
+    width: 300px;
+    height: 30px;
+    outline: none;
+    margin-bottom: 10px;
+    padding-left: 10px;
+    @media screen and (max-width:555px) {
+        width: 240px;
+        height: 25px;
+    }
+    @media screen and (max-width:360px) {
+        width: 215px;
+        height: 25px;
+    }
+}
+
+.loginTitle{
+    font-family: 'Inter';
+    font-size: 20px;
+    color: white;
+}
+
+.formWrapper{
+
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+
+
+.link{
+
+    font-family: 'Inter';
+    font-size: 14px;
+    font-weight: 500;
+    color: rgb(195, 195, 195);
+    @media screen and (max-width:360px) {
+        font-size: 12px;
+     }
+}
+
+.signBtn{
+    width: 320px;
+    height: 50px;
+    background-color: rgb(107, 107, 107);
+    border: none;
+    font-family: "Inter";
+    font-weight: 700;
+    font-size: 14px;
+    color: white;
+    margin-top: 10px;
+    cursor: pointer;
+    @media screen and (max-width:555px) {
+    
+        width: 250px;
+        height: 40px;
+    }
+    @media screen and (max-width:360px) {
+    
+        width: 235px;
+        height: 35px;
+    }
+}

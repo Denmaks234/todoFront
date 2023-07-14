@@ -1,0 +1,16 @@
+
+@import '../../variables.scss';
+
+.menu{
+    margin-top: 64px;
+   
+   
+}
+
+.menuWrapper{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 24px;
+    border-bottom: 1px solid $gray-400;
+}
