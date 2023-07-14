@@ -8,7 +8,7 @@ const EmptyBlock = ()=>{
                         <div className={styles.emptyBlockWrapper}>
 
                            <img src={clickBoard} alt="" height={56} width={56} />
-                           <p className={styles.content}><span>Ooo,you dont have tasks</span>Please write a task in the main input</p>
+                           <p className={styles.content}><span>Ooo,you dont have tasks</span><br/>Please write a task in the main input</p>
                         </div>
                 </div>
            
