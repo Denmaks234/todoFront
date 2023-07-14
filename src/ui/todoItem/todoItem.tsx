@@ -3,7 +3,8 @@ import styles from  './todoItem.module.scss'
 import falseIcon from '../../assets/falseChecked.svg'
 import trueIcon from '../../assets/trueChecked.svg'
 import {BsThreeDotsVertical} from 'react-icons/bs'
-import {MdDelete,MdSystemUpdateAlt} from 'react-icons/md'
+import {MdDelete} from 'react-icons/md'
+import {FiEdit} from 'react-icons/fi'
 import {IoMdClose} from 'react-icons/io'
 import { useState } from 'react';
 import { useDeleteTodoMutation,useUpdateTodoMutation } from '../../services/todo.service'
@@ -68,7 +69,7 @@ const TodoItem : FC<ITodoItem>  = (props) => {
         <button className={styles.image} onClick={()=>{setShowed(true)}}><BsThreeDotsVertical className={styles.deleteIcon} size={20}/></button>
         <div className={IsShowed?styles.smenu:styles.menu}>
             <button className={styles.deleteBtn } onClick={OnDeleteTodo}><MdDelete size={20}/></button>
-            <button className={styles.updateBtn} onClick={update} > <MdSystemUpdateAlt  size={20}/></button>
+            <button className={styles.updateBtn} onClick={update} > <FiEdit  size={20}/></button>
             <button  className={styles.closeBtn}> <IoMdClose size={18} onClick={()=>{setShowed(false)}} /></button>
         </div>
 
