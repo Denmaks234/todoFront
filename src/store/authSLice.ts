@@ -21,7 +21,7 @@ export const authSlice=createSlice({
           state.token=action.payload.token
           
     }),
-    builder.addMatcher(authApi.endpoints.login.matchRejected,(state,action)=>{
+    builder.addMatcher(authApi.endpoints.login.matchRejected,(state)=>{
       state.accsess=false
       state.token=''
   })

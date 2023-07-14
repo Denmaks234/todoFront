@@ -1,15 +1,10 @@
-
-import styles from './Home.module.scss'
 import Header from '../../components/header/header';
 import AddBlock from '../../components/addBlock/addBlock';
 import Menu from '../../components/menu/menu';
 import TodoItems from '../../components/todoItems/todoItems';
-import { useState,useRef,RefObject, FC,useEffect  } from 'react';
-import { ITodoItem } from '../../ui/todoItem/todoItem';
+import { useState,useRef,RefObject,useEffect  } from 'react';
 import { useNavigate } from 'react-router-dom';
-import { useAppSelector } from '../../hooks/useAppSelector';
-import { IUserData, useGetUserQuery } from '../../services/auth.service';
-import { IAuth } from '../../store/authSLice';
+import {  useGetUserQuery } from '../../services/auth.service';
 import { useGetTodosQuery } from '../../services/todo.service';
 
 

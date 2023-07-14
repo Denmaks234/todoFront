@@ -1,9 +1,8 @@
 import  './App.scss'
-import { useAppSelector } from './hooks/useAppSelector'
 import HomePage from './pages/HomePage/Home'
 import LoginPage from './pages/LoginPage/Login'
 import RegisterPage from './pages/RegisterPage/Register'
-import { Route,Routes, useNavigate,redirect } from 'react-router-dom'
+import { Route,Routes } from 'react-router-dom'
 
 
 

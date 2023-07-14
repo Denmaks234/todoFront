@@ -16,14 +16,11 @@ interface IAddBlock{
 }
 
 
-
-
-
 const AddBlock:FC<IAddBlock> = (props) =>{
     
     const [title,setTitle]=useState('')
     const token = localStorage.getItem('token')
-    const [createTodo,{data}]=useCreateTodoMutation()
+    const [createTodo]=useCreateTodoMutation()
     const [updateTodo,{}]=useUpdateTodoMutation()
     
     const onClickAdd=()=>{

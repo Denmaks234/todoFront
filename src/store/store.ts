@@ -1,4 +1,4 @@
-import { configureStore, getDefaultMiddleware } from '@reduxjs/toolkit'
+import { configureStore } from '@reduxjs/toolkit'
 import { authSlice } from './authSLice'
 import { authApi } from '../services/auth.service'
 import { todoApi } from '../services/todo.service'
