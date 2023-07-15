@@ -1,5 +1,5 @@
 
-import { FC, useState } from 'react'
+import { FC } from 'react'
 import styles from './errorMessage.module.scss'
 import {BiErrorCircle} from 'react-icons/bi'
 
