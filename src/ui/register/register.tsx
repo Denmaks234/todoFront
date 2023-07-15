@@ -1,16 +1,31 @@
 
-import { ChangeEvent, FormEvent, useState } from 'react'
+import { ChangeEvent, FormEvent, useEffect, useState } from 'react'
 import { useSignupMutation } from '../../services/auth.service'
 import styles from './register.module.scss'
 import { Link, useNavigate } from 'react-router-dom'
+import ErrorMessage from '../../components/Errormessage/errorMessage'
 const Register = () => {
 
-    const [signup,{data}]=useSignupMutation()
+    const [signup,{data,error,isError}]=useSignupMutation()
     const navigate=useNavigate()
     const [email,setEmail]=useState('')
     const [password,setPassword]=useState('')
     const [username,setUsername]=useState('')
+    const [isShow,setIsShow]=useState(false)
+    const [errorMessage,setErrorMessage]=useState('')
 
+    useEffect(()=>{
+        if(error){
+            if('data' in error) {
+            
+               setErrorMessage(String(error.data))
+               setIsShow(true)
+               setTimeout(()=>{setIsShow(false)},5000)
+            }
+        }
+       
+    
+    },[isError])
 
     const ChangeEmail=(e:ChangeEvent<HTMLInputElement>)=>{
         setEmail(e.target.value)
@@ -53,7 +68,7 @@ return (
         </form>
         </div>
         </div>
-        
+        <ErrorMessage error={errorMessage} isShow={isShow}/>
     </div>
 )
 

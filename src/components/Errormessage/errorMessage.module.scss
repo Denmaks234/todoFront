@@ -1,0 +1,32 @@
+.errorMessage{
+    position: absolute;
+    width: 100%;
+    top: 0;
+    transition: all ease 1s;
+}
+
+.errorMessageClose{
+    position: absolute;
+    width: 100%;
+    top: -100px;
+    transition: all ease 1s;
+}
+
+.errorBlock{
+   
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    background-color: rgb(243, 29, 29);
+    border-radius: 0 0 10px 10px;
+    svg{
+        color: white;
+        padding-right: 20px;
+    }
+}
+.errorText{
+    font-family: 'Inter';
+    color: white;
+    font-weight: bold;
+    font-size: 14px;
+}

@@ -2,14 +2,34 @@
 import { Link, useNavigate } from 'react-router-dom'
 import styles from './login.module.scss'
 import { useLoginMutation } from '../../services/auth.service';
-import { ChangeEvent, FormEvent, useState } from 'react';
+import { ChangeEvent, FormEvent, useEffect, useState } from 'react';
+import ErrorMessage from '../../components/Errormessage/errorMessage';
+
+
 
 const Login = () => {
     const navigate=useNavigate()
-    const [login,{data}]=useLoginMutation()
+    const [login,{data,isError,error}]=useLoginMutation()
     const [password,setPassword]=useState('')
     const [email,setEmail]=useState('')
+    const [isShow,setIsShow]=useState(false)
+    const [errorMessage,setErrorMessage]=useState('')
+
+
+    useEffect(()=>{
+        if(error){
+            if('data' in error) {
+               setErrorMessage(String(error.data))
+               setIsShow(true)
+               setTimeout(()=>{setIsShow(false)},5000)
+            }
+        }
+       
     
+    },[isError])
+    
+
+
 const SignIn= async (e:FormEvent)=>{
     e.preventDefault()
     await login({email,password}).unwrap()
@@ -28,6 +48,7 @@ if(data?.accsess){
     localStorage.setItem('token', data.token)
 }
 
+
 return (
     <div className={styles.loginBlock}>
         <div className="container">
@@ -44,7 +65,9 @@ return (
         </form>
         </div>
         </div>
+
         
+        <ErrorMessage error={errorMessage} isShow={isShow}/>
     </div>
 )
 

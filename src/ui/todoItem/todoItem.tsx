@@ -37,10 +37,12 @@ const TodoItem : FC<ITodoItem>  = (props) => {
             props.addFocus()
         }
         props.setActiveId?props.setActiveId(props.id?props.id:0):null
+        setShowed(false)
     }
     
     const OnDeleteTodo=()=>{
         deleteTodo(props.id)
+        setShowed(false)
     }
 
     const onChangeTrueComplete =()=>{

@@ -10,12 +10,13 @@ interface IButoon{
     setUpdate:(isUpdate:boolean)=>void;
     onClickAdd:()=>void;
     onClickUpdate:()=>void
+    isError:boolean
 }
 
 const Button:FC<IButoon> = (props)=>{
 
     const setUpdate = () =>{
-        props.setUpdate?props.setUpdate(false):null;
+            props.setUpdate?props.setUpdate(false):null;
     }
 
     return(

@@ -26,7 +26,7 @@ const HomePage  = (  ) =>{
     const addFocus = () =>{
         inputRef.current?.focus()
     }
-
+    
     useEffect(()=>{
     if(isError  ){
         navigate('/login')
@@ -40,7 +40,7 @@ const HomePage  = (  ) =>{
             <AddBlock setUpdate={setIsUpdate}  textInput={inputRef} isUpdate={isUpdate} activeId={activeId}/>
             <Menu items={data} />
             <TodoItems addFocus={addFocus} setActiveId={setActiveId} setUpdate={setIsUpdate} items={data}/>
-    
+            
             </>
             
         )
