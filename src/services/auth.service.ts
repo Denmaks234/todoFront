@@ -13,7 +13,7 @@ export interface IUserData extends IUser {
 
 export const authApi=createApi({
     reducerPath:'auth',
-    baseQuery:fetchBaseQuery({baseUrl:'http://localhost:5000', credentials:'include'}),
+    baseQuery:fetchBaseQuery({baseUrl:'https://todoserver-production-93e7.up.railway.app', credentials:'include'}),
     endpoints:(builder)=>({
         login:builder.mutation<IAuth,IUser>({
             query:(arg)=>({

@@ -6,7 +6,7 @@ import { ITodoItem } from "../ui/todoItem/todoItem";
 
 export const todoApi=createApi({
     reducerPath:'todos',
-    baseQuery:fetchBaseQuery({baseUrl:'http://localhost:5000/api'}),
+    baseQuery:fetchBaseQuery({baseUrl:'https://todoserver-production-93e7.up.railway.app/api'}),
     tagTypes: ['todos'],
     endpoints:(builder)=>({
         getTodos:builder.query<ITodoItem[],string|null>({
